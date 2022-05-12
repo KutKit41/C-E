@@ -4,7 +4,7 @@ const number = parseInt(prompt("Nhập vào 1 số dương:"));
 let isPrime = true;
 //Kiểm tra xem đó có phải số nguyên tố không bằng cách giải thuật chia thử trong khoảng 2 đến căn của số nhập vào
 if (number < 2) {
-    //các số lớn hơn 1 thì là số nguyên tố hay các số nhỏ hơn 2 không phải là số nguyên tố
+    //các số nguyên tố thì lớn hơn 1 hay nói cách khác các số nhỏ hơn 2 không phải là số nguyên tố
     isPrime = false;
 } else if (number == 2){
     isPrime = true;
@@ -15,7 +15,7 @@ if (number < 2) {
         isPrime = false;
     }
 }
-//cho ra kết quả    
+//in ra kết quả    
 }
 if (isPrime == true){
     console.log(number, ("là số nguyên tố"));
